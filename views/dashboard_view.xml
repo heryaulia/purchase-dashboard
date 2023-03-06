@@ -1,0 +1,23 @@
+<odoo>
+    <data>
+        <record id="purchase_action_dashboard" model="ir.actions.client">
+            <field name="name">Purchase Dashboard</field>
+            <field name="tag">purchase_dashboard_tag</field>
+        </record>
+    
+    <menuitem id="menu_purchase_dashboard"
+          name="Purchase Dashboard"
+          action="purchase_action_dashboard"
+          web_icon="purchase_dashboard,static/description/dashboard_icon.png"
+          sequence="-1" groups="base.group_user"
+          parent="purchase.menu_purchase_root"/>
+
+    
+    </data>
+    <template id="assets_backend" name="Purchase Dashboard assets" inherit_id="web.assets_backend">
+        <xpath expr="." position="inside">
+            <script type="text/javascript" src="/nieve_purchase_dashboard/static/src/js/purchase_dashboard.js"/>
+            <link rel="stylesheet" href="/nieve_purchase_dashboard/static/src/css/purchase_dashboard.css"/>
+        </xpath>
+    </template>
+</odoo>

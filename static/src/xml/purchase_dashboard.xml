@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<template>
+   <t t-name="CustomDashBoard">
+       <div class="oh_dashboards" style="margin-top: 20px;" >
+           <div class="container-fluid o_pj_dashboard">
+           </div>
+       </div>
+   </t>
+       <t t-name="DashboardProject">
+       <div class="dashboard-header" style="margin-left: 20px; margin-right: 20px;"><h1>Purchase Dashboard</h1></div>
+       <div class="row main-section" style="margin-left: 20px; margin-right: 20px;">
+
+           <!-- <div class="col-md-4 col-sm-6 total_rfq oh-payslip" >
+               <div class="oh-card" style="width: 410px;">
+                   <div class="oh-card-body">
+                       <div class="stat-widget-one">
+                           <div class="stat-icon" style="background:#e08048;"><i class="fa fa-puzzle-piece"/></div>
+                           <div class="stat-content">
+                               <div class="stat-head">Total RFQ</div>
+                               <div class="stat_count"><t t-esc="widget.total_rfq"/></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-4 col-sm-6 total_po oh-payslip">
+               <div class="oh-card" style="width: 410px;">
+                   <div class="oh-card-body">
+                       <div class="stat-widget-one">
+                           <div class="stat-icon" style="background:#645bd0"><i class="fa fa-user"/></div>
+                           <div class="stat-content">
+                               <div class="stat-head">Total PO</div>
+                               <div class="stat_count"><t t-esc="widget.total_po"/></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="col-md-4 col-sm-6 total_incoming oh-payslip">
+               <div class="oh-card" style="width: 410px;">
+                   <div class="oh-card-body">
+                       <div class="stat-widget-one">
+                           <div class="stat-icon" style="background:#85d05b"><i class="fa fa-tasks"/></div>
+                               <div class="stat-content">
+                                   <div class="stat-head">Total Incoming</div>
+                                   <div class="stat_count"><t t-esc="widget.total_incoming"/></div>
+                               </div>
+                       </div>
+                   </div>
+               </div>
+           </div> -->
+
+           <div class="dashboard-container">
+                <div class="card total_rfq">
+                    <div class="card-body">
+                    <h2>Total RFQ</h2>
+                    <h2><t t-esc="widget.amount_total"/></h2>
+                    <p>Count: <t t-esc="widget.total_rfq"/></p>
+                    </div>
+                </div>
+
+                <div class="card total_po">
+                    <div class="card-body">
+                    <h2>Total PO</h2>
+                    <h2><t t-esc="widget.amount_total_po"/></h2>
+                    <p>Count: <t t-esc="widget.total_po"/></p>
+                    </div>
+                </div>
+
+                <div class="card total_incoming">
+                    <div class="card-body">
+                    <h2>Total Incoming</h2>
+                    <!-- <h2>77418.3</h2> -->
+                    <p>Count: <t t-esc="widget.total_incoming"/></p>
+                    </div>
+                </div>
+            </div>
+       </div>
+   </t>
+</template>
