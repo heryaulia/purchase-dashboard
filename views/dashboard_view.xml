@@ -16,8 +16,9 @@
     </data>
     <template id="assets_backend" name="Purchase Dashboard assets" inherit_id="web.assets_backend">
         <xpath expr="." position="inside">
-            <script type="text/javascript" src="/nieve_purchase_dashboard/static/src/js/purchase_dashboard.js"/>
-            <link rel="stylesheet" href="/nieve_purchase_dashboard/static/src/css/purchase_dashboard.css"/>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"/>
+            <script type="text/javascript" src="/purchase_dashboard/static/src/js/purchase_dashboard.js"/>
+            <link rel="stylesheet" href="/purchase_dashboard/static/src/css/purchase_dashboard.css"/>
         </xpath>
     </template>
 </odoo>
